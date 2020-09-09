@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html, body{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        body{
+            display: grid;
+            grid-template-rows: 1fr  90vh 1fr ;
+            grid-template-columns: 1fr 5fr 1fr;   
+            grid-template-areas: 
+                'header header header'
+                'nav main aside' 
+                'nav footer aside'
+            ;
+
+        }
+
+        header{
+            grid-area: header;
+            background-color: brown;
+        }
+
+        nav{
+            grid-area: nav;
+            background-color: cyan;
+        }
+
+        main{
+            grid-area: main;
+            background-color: yellow;
+        }
+
+        footer{
+            grid-area: footer;
+            background-color: grey;
+        }
+
+        aside{
+            grid-area: aside;
+            background-color: crimson;
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+    <nav></nav>
+    <main></main>
+    <aside></aside>
+    <footer></footer>
+</body>
+</html>
